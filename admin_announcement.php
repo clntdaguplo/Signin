@@ -195,7 +195,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update_announcement'])
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="admin.php">Home</a></li>
-                <li class="nav-item"><b><a class="nav-link" href="admin_announcement.php">Announcements</a></b></li>
+                <li class="nav-item"><b><a class="nav-link" href="admin_announcement.php">ANNOUNCEMENTS</a></b></li>
                 <li class="nav-item"><a class="nav-link" href="students.php">Students</a></li>
                 <li class="nav-item"><a class="nav-link" href="current_sitin.php">Sit-In</a></li>
                 <li class="nav-item"><a class="nav-link" href="sitinrecords.php">Sit-in Records</a></li>

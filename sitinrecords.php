@@ -118,7 +118,7 @@ if (!$result) {
                 <li class="nav-item"><a class="nav-link" href="admin_announcement.php">Announcement</a></li>
                 <li class="nav-item"><a class="nav-link" href="students.php">Students</a></li>
                 <li class="nav-item"><a class="nav-link" href="current_sitin.php">Sit-In</a></li>
-                <li class="nav-item"><b><a class="nav-link" href="sitinrecords.php">Sit-in Records</a></b></li>
+                <li class="nav-item"><b><a class="nav-link" href="sitinrecords.php">SIT-IN RECORDS</a></b></li>
                 <li class="nav-item"><a class="nav-link" href="#">Reports</a></li>
             </ul>
             <a href="login.php?logout=true" class="logout-btn ms-3">Log out</a>

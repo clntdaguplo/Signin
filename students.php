@@ -168,7 +168,7 @@ if ($result_users->num_rows > 0) {
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="admin.php">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="admin_announcement.php">Announcements</a></li>
-                <li class="nav-item"><b><a class="nav-link" href="students.php">Students</a></b></li>
+                <li class="nav-item"><b><a class="nav-link" href="students.php">STUDENTS</a></b></li>
                 <li class="nav-item"><a class="nav-link" href="current_sitin.php">Sit-In</a></li>
                 <li class="nav-item"><a class="nav-link" href="sitinrecords.php">Sit-in Records</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Reports</a></li>
