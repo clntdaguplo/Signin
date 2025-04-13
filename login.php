@@ -14,7 +14,7 @@
 <body>
     <div class="login-container">
         <img src="uc-removebg-preview.png" alt="UC" style="width: 200px; height: 200px;">
-        <h1 class="login-title">CSS Sitin Monitoring System</h1>
+        <h1 class="login-title">CSS SitIn Monitoring 🖥️</h1>
         <form action="login.php" method="POST">
             <div class="form-group">
                 <input type="text" id="username" name="username" placeholder="Username" required>

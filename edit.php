@@ -8,10 +8,10 @@
 </head>
 <style>
         body {
-            background-color: #f8f9fa;
+            background-color:rgba(224, 234, 243, 0.84);
         }
         .navbar {
-            background-color: #212529 !important;
+            background-color:hsl(249, 77.80%, 24.70%) !important;
         }
         .profile-container {
             max-width: 600px;
@@ -50,7 +50,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="dashboard.php">Dashboard</a>
+                <a class="navbar-brand" href="dashboard.php"><b>Dashboard</b></a>
             </nav>
 
             <!-- Sidebar -->
@@ -60,8 +60,8 @@
                 </div>
                 <div class="offcanvas-body">
                     <ul class="nav flex-column">
-                        <li class="nav-item"><a class="nav-link" href="dashboard.php">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="edit.php">Edit Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="dashboard.php">Back to Home</a></li>
+                        
                         <li class="nav-item"><a class="nav-link" href="#">History</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Reservation</a></li>
                         <li class="nav-item"><a class="nav-link" href="login.php" onclick="return confirm('Are you sure you want to log out?');">Logout</a></li>

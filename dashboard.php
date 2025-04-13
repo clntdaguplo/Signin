@@ -9,10 +9,13 @@
     
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color:rgba(218, 229, 240, 0.7);
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+        }
+        .navbar {
+            background-color:hsl(249, 77.80%, 24.70%) !important;
         }
         .announcement-box, .rules-box {
             max-height: 250px;
@@ -20,16 +23,16 @@
         }
         .card {
             border: none;
-            box-shadow: 0 4px 8px rgba(133, 58, 8, 0.1);
+            box-shadow: 0 4px 8px hsl(209, 88.10%, 13.10%);
             transition: transform 0.3s ease-in-out;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             height: 100%; /* Make cards equal height */
         }
         .card:hover {
             transform: translateY(-5px);
         }
         .card-header {
-            background-color: #007bff;
+            background-color:hsl(249, 92.90%, 33.10%);
             color: white;
             border-bottom: none;
         }
@@ -42,7 +45,7 @@
             height: 120px;
             object-fit: cover;
             border-radius: 50%;
-            border: 3px solid #007bff;
+            border: 3px solid rgb(65, 141, 221);
         }
         .card-body {
             padding: 20px;
@@ -64,7 +67,7 @@
         }
 
         .logout-btn {
-            background-color: #e74c3c;
+            background-color:rgba(189, 142, 12, 0.75);
             color: white !important;
             padding: 8px 20px !important;
             border-radius: 4px;
@@ -74,7 +77,7 @@
         }
 
         .logout-btn:hover {
-            background-color: #c0392b;
+            background-color:rgb(201, 81, 1);
             color: white !important;
             text-decoration: none;
         }
@@ -92,36 +95,30 @@
                 max-width: 100%;
             }
         }
-        .navbar {
-    background-color: #0d6efd;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* Ensures it stays on top of other elements */
-}
-.welcome-message {
-    font-family: 'Libre Baskerville', serif;
-}
-        
+       
     </style>
 </head>
 <body class="d-flex flex-column min-vh-100">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="dashboard.php">Dashboard</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="edit.php">Edit Profile</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">History</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Reservation</a></li>
-                </ul>
-                <<a href="login.php?logout=true" class="logout-btn ms-auto">Log out</a>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="dashboard.php"><b>Dashboard</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto d-flex align-items-center">
+                <li class="nav-item"><a class="nav-link" href="edit.php">Edit Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">History</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Reservation</a></li>
+                <li class="nav-item">
+                    <a href="login.php?logout=true" class="logout-btn nav-link">Log out</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+
 
     <div class="container-fluid">
         <!-- Main Content -->
@@ -138,7 +135,7 @@
                 if ($result->num_rows > 0) {
                     $row = $result->fetch_assoc();
                     $Firstname = htmlspecialchars($row['Firstname']);
-                    echo "<h1 class='page-title'>Welcome $Firstname to Sit-in Monitoring System</h1>";
+                    echo "<h1 class='page-title'><b>Welcome $Firstname to Sit-in Monitoring System</b></h1>";
                 } else {
                     echo "<h1 class='page-title'>Welcome to Sit-in Monitoring System</h1>";
                 }
@@ -152,7 +149,7 @@
                     <!-- Profile -->
                     <div class="dashboard-col">
                         <div class="card">
-                            <div class="card-header">Profile</div>
+                            <div class="card-header">👤 Profile</div>
                             <div class="card-body">
                                 <?php
                                 include "connect.php";
@@ -195,7 +192,7 @@
                     <!-- Announcements -->
                     <div class="dashboard-col">
                         <div class="card">
-                            <div class="card-header" style="background-color: #17a2b8;">Announcements</div>
+                            <div class="card-header" style="background-color:hsl(249, 92.90%, 33.10%);">📢 Announcements</div>
                             <div class="card-body announcement-box" style="background-color: #f0f8ff;">
                                 <?php
                                 //Fetch announcements from database
@@ -222,7 +219,7 @@
                     <!-- Rules & Regulations -->
                     <div class="dashboard-col">
                         <div class="card">
-                            <div class="card-header" style="background-color: #ffc107; color: #212529;">Rules & Regulations</div>
+                            <div class="card-header" style="background-color:hsl(249, 92.90%, 33.10%);">📃 Rules & Regulations</div>
                             <div class="card-body rules-box" style="background-color: #fff8dc;">
                                 <h5 class="text-center">University of Cebu</h5>
                                 <h6 class="text-center">COLLEGE OF INFORMATION & COMPUTER STUDIES</h6>

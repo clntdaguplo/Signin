@@ -52,12 +52,15 @@ if ($result_users->num_rows > 0) {
     <title>Students</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
+       body {
+            background-color:rgba(215, 230, 245, 0.7);
             display: flex;
-            min-height: 100vh;
             flex-direction: column;
+            min-height: 100vh;
         }
-
+        .navbar {
+            background-color:hsl(249, 77.80%, 24.70%) !important;
+        }
         .main {
             padding: 20px;
             margin-left: 250px;
@@ -119,7 +122,7 @@ if ($result_users->num_rows > 0) {
         }
 
         .logout-btn {
-            background-color: #e74c3c;
+            background-color:rgba(189, 142, 12, 0.75);
             color: white !important;
             padding: 8px 20px !important;
             border-radius: 4px;
@@ -129,30 +132,27 @@ if ($result_users->num_rows > 0) {
         }
 
         .logout-btn:hover {
-            background-color: #c0392b;
+            background-color:rgb(201, 81, 1);
             color: white !important;
             text-decoration: none;
         }
         .navbar {
-    background-color: #0d6efd;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* Ensures it stays on top of other elements */
+        background-color: #0d6efd;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 1000; /* Ensures it stays on top of other elements */
+        }
+
+        .navbar-nav {
+        margin-left: auto; /* Pushes navigation items to the right */
+        }
+        .card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-.navbar-nav {
-    margin-left: auto; /* Pushes navigation items to the right */
-}
-
-.logout-btn {
-    background-color: #e74c3c;
-    color: white !important;
-    padding: 8px 20px !important;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
+     
 
     </style>
 </head>
@@ -167,6 +167,7 @@ if ($result_users->num_rows > 0) {
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="admin.php">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="admin_announcement.php">Announcements</a></li>
                 <li class="nav-item"><b><a class="nav-link" href="students.php">Students</a></b></li>
                 <li class="nav-item"><a class="nav-link" href="current_sitin.php">Sit-In</a></li>
                 <li class="nav-item"><a class="nav-link" href="sitinrecords.php">Sit-in Records</a></li>
@@ -178,9 +179,11 @@ if ($result_users->num_rows > 0) {
 </nav>
 
 <body class="bg-light">
-    <div class="container mt-4">
-        <h2>Student List</h2>
-        
+    
+<div class="container mt-4">
+    <div class="card shadow-sm p-4 bg-white rounded">
+        <h2 class="mb-4">Student List</h2>
+
         <!-- Search and Filter Section -->
         <div class="row mb-4">
             <div class="col-md-6">
@@ -190,6 +193,7 @@ if ($result_users->num_rows > 0) {
                     <a href="students.php" class="btn btn-secondary">Clear</a>
                 </form>
             </div>
+            
             <div class="col-md-6">
                 <form method="GET" class="d-flex gap-2 justify-content-end">
                     <select name="filter_course" class="form-select" style="width: auto;">
@@ -241,6 +245,8 @@ if ($result_users->num_rows > 0) {
             </tbody>
         </table>
     </div>
+</div>
+
 </body>
 </html>
 

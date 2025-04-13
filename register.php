@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="styles.css">
     <style>
          body {
-        background: linear-gradient(135deg,rgb(243, 243, 232),rgb(121, 199, 235),rgb(250, 249, 247));
+        background: linear-gradient(135deg,rgb(215, 231, 236),rgb(41, 158, 236),rgb(213, 241, 86));
         }
     </style>
 </head>
 <body>
     <div class="register-container">
-        <h1 class="register-title">Register</h1>
+        <h1 class="register-title">Register  Here 🔗</h1>
         <form action="register.php" method="POST" id="registrationForm"> 
             <div class="form-group">
-                <input type="text" id="idnumber" name="idnumber" placeholder="idnumber" required>
+                <input type="text" id="idnumber" name="idnumber" placeholder="ID number" required>
             </div>
             <div class="form-group">
                 <input type="text" id="Lastname" name="Lastname" placeholder="Lastname" required>
@@ -25,7 +25,7 @@
                 <input type="text" id="Firstname" name="Firstname" placeholder="Firstname" required>
             </div>
             <div class="form-group">
-                <input type="text" id="Midname" name="Midname" placeholder="Midname">
+                <input type="text" id="Midname" name="Midname" placeholder="Middlename">
             </div>
             <div class="form-group">
                 <select id="course" name="course" required>
@@ -38,14 +38,14 @@
             <div class="form-group">
                 <select id="year_level" name="year_level" required>
                     <option value="" disabled selected>Year Level</option>
-                    <option value="1Th">1Th</option>
-                    <option value="2Th">2Th</option>
-                    <option value="3Th">3Th</option>
-                    <option value="4Th">4Th</option>
+                    <option value="1Th Year">1Th Year</option>
+                    <option value="2Th Year">2Th Year</option>
+                    <option value="3Th Year">3Th Year</option>
+                    <option value="4Th Year">4Th Year</option>
                 </select>
             </div>
             <div class="form-group">
-                <input type="text" id="username" name="username" placeholder="username" required>
+                <input type="text" id="username" name="username" placeholder="Username" required>
             </div>
             <div class="form-group">
                 <input type="password" id="password" name="password" placeholder="Password" required>
