@@ -70,7 +70,7 @@
             </div>
     <div class="profile-container">
         <div></div>    
-        <h1 class="profile-title">Edit Profile</h1>
+        <h1 class="profile-title">🎞️ Edit Profile</h1>
         
 
 <?php

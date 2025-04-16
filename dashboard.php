@@ -135,7 +135,7 @@
                 if ($result->num_rows > 0) {
                     $row = $result->fetch_assoc();
                     $Firstname = htmlspecialchars($row['Firstname']);
-                    echo "<h1 class='page-title'><b>Welcome $Firstname to Sit-in Monitoring System</b></h1>";
+                    echo "<h1 class='page-title'><b>Welcome <b>$Firstname</b> to Sit-in Monitoring System</b></h1>";
                 } else {
                     echo "<h1 class='page-title'>Welcome to Sit-in Monitoring System</h1>";
                 }

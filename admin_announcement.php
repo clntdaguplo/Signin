@@ -196,10 +196,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update_announcement'])
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="admin.php">Home</a></li>
                 <li class="nav-item"><b><a class="nav-link" href="admin_announcement.php">ANNOUNCEMENTS</a></b></li>
+                <li class="nav-item"><a class="nav-link" href="#">Search</a></li>
                 <li class="nav-item"><a class="nav-link" href="students.php">Students</a></li>
                 <li class="nav-item"><a class="nav-link" href="current_sitin.php">Sit-In</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">View Sit-in Records</a></li>
                 <li class="nav-item"><a class="nav-link" href="sitinrecords.php">Sit-in Records</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Reports</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Feedback Reports</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Reservation</a></li>
             </ul>
             <a href="login.php?logout=true" class="logout-btn ms-3">Log out</a>
         </div>
@@ -212,7 +215,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update_announcement'])
         <div class="row">
             <div class="col-md-12">
                 <section>
-                    <h3>Post Announcement</h3>
+                    <h3>📨 Post Announcement</h3>
                     <form method="POST" action="">
                         <div class="mb-3">
                             <label for="announcement_title" class="form-label">Title</label>
